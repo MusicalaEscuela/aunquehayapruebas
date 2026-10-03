@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#220A63" />
+  <title>Aunque haya pruebas · Material de piano | Musicala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Musicala">
+      <img src="assets/logo-musicala.png" alt="Musicala" />
+    </a>
+    <span class="header-pill">Material de piano</span>
+  </header>
+
+  <main id="inicio">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow">PIANO · INTRO</div>
+        <h1>Aunque haya pruebas</h1>
+        <p class="artist">Felipe Garibo</p>
+        <p class="lead">
+          Vamos a comenzar con una adaptación sencilla del intro para tocarlo únicamente en
+          <strong>teclas blancas</strong>. La melodía original usa <strong>Si♭</strong>; para esta primera
+          versión subimos todas las notas <strong>un tono completo</strong>.
+        </p>
+        <div class="hero-actions">
+          <button class="primary-btn" id="playAdaptedTop">▶ Escuchar versión de inicio</button>
+          <a class="ghost-btn" href="#intro">Ver las notas ↓</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Resumen de adaptación">
+        <div class="mini-label">CAMBIO CLAVE</div>
+        <div class="transpose-line">
+          <span>+1</span>
+          <div>
+            <strong>tono</strong>
+            <small>para quedarnos en teclas blancas</small>
+          </div>
+        </div>
+        <div class="mapping-grid">
+          <div><span>Do</span><b>→</b><strong>Re</strong></div>
+          <div><span>Si♭</span><b>→</b><strong>Do</strong></div>
+          <div><span>La</span><b>→</b><strong>Si</strong></div>
+          <div><span>Sol</span><b>→</b><strong>La</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section wrap" id="intro">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <div>
+          <p class="kicker">Intro</p>
+          <h2>Primero entendemos el cambio</h2>
+        </div>
+      </div>
+
+      <div class="sequence-grid">
+        <article class="sequence-card original-card">
+          <div class="card-topline">
+            <div>
+              <span class="tag tag-original">Canción original</span>
+              <h3>Notas originales</h3>
+            </div>
+            <button class="icon-btn" data-play="original" aria-label="Escuchar notas originales">▶</button>
+          </div>
+          <p class="sequence-note">Aquí aparece <strong>Si♭</strong>, una tecla negra.</p>
+          <div class="phrase" data-sequence="original">
+            <div class="note-row">
+              <span>Do</span><span>Si♭</span><span>La</span><span>Si♭</span><span>La</span><span>La</span><span>Sol</span>
+            </div>
+            <div class="note-row">
+              <span>La</span><span>Si♭</span><span>La</span><span>La</span><span>Si♭</span><span>Do</span><span>Si♭</span><span>Si♭</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="sequence-card adapted-card">
+          <div class="card-topline">
+            <div>
+              <span class="tag tag-adapted">Versión para iniciar</span>
+              <h3>Subimos un tono</h3>
+            </div>
+            <button class="icon-btn accent" data-play="adapted" aria-label="Escuchar versión adaptada">▶</button>
+          </div>
+          <p class="sequence-note">Ahora todo se puede tocar con <strong>teclas blancas</strong>.</p>
+          <div class="phrase" data-sequence="adapted">
+            <div class="note-row">
+              <span>Re</span><span>Do</span><span>Si</span><span>Do</span><span>Si</span><span>Si</span><span>La</span>
+            </div>
+            <div class="note-row">
+              <span>Si</span><span>Do</span><span>Si</span><span>Si</span><span>Do</span><span>Re</span><span>Do</span><span>Do</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon">♪</div>
+        <div>
+          <strong>¿Qué estamos practicando?</strong>
+          <p>No buscamos correr. Primero identifica el recorrido <b>La · Si · Do · Re</b>, mantén una pulsación estable y escucha cómo se repite el patrón.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="practice-section" id="practica">
+      <div class="wrap">
+        <div class="section-heading light-heading">
+          <span class="section-number">02</span>
+          <div>
+            <p class="kicker">Práctica</p>
+            <h2>Escucha, mira y toca</h2>
+          </div>
+        </div>
+
+        <div class="practice-panel">
+          <div class="practice-copy">
+            <span class="tag tag-adapted">Versión de inicio</span>
+            <h3>Re · Do · Si · Do...</h3>
+            <p>Presiona reproducir y la tecla correspondiente se iluminará. Puedes bajar la velocidad para estudiarlo con calma, porque las manos humanas, curiosamente, no incluyen botón de “2x”.</p>
+            <div class="controls">
+              <button class="primary-btn light-btn" id="playAdapted">▶ Reproducir</button>
+              <button class="secondary-btn" id="stopPlayback">■ Detener</button>
+            </div>
+            <label class="speed-control">
+              <span>Velocidad</span>
+              <input id="speedRange" type="range" min="450" max="1000" step="50" value="700" />
+              <b id="speedLabel">Normal</b>
+            </label>
+          </div>
+
+          <div class="piano-wrap">
+            <div class="now-playing" id="nowPlaying">Listo para practicar</div>
+            <div class="piano" id="piano" aria-label="Teclado de piano interactivo">
+              <button class="white-key" data-note="G3"><span>Sol</span></button>
+              <button class="white-key" data-note="A3"><span>La</span></button>
+              <button class="white-key" data-note="B3"><span>Si</span></button>
+              <button class="white-key" data-note="C4"><span>Do</span></button>
+              <button class="white-key" data-note="D4"><span>Re</span></button>
+              <button class="white-key" data-note="E4"><span>Mi</span></button>
+
+              <button class="black-key black-1" data-note="G#3" aria-label="Sol sostenido"></button>
+              <button class="black-key black-2" data-note="Bb3" aria-label="Si bemol"><span>Si♭</span></button>
+              <button class="black-key black-4" data-note="C#4" aria-label="Do sostenido"></button>
+              <button class="black-key black-5" data-note="D#4" aria-label="Re sostenido"></button>
+            </div>
+            <div class="legend">
+              <span><i class="legend-dot adapted-dot"></i> Versión de inicio</span>
+              <span><i class="legend-dot black-dot"></i> Si♭ de la versión original</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap next-section">
+      <div class="next-card">
+        <div>
+          <p class="kicker">Siguiente paso</p>
+          <h2>Domina el intro antes de avanzar</h2>
+          <p>Cuando puedas tocarlo varias veces sin detenerte, el material puede crecer con digitación, ritmo, acompañamiento y las siguientes partes de la canción.</p>
+        </div>
+        <div class="progress-ring" aria-label="Primer paso">
+          <span>1</span>
+          <small>paso</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <img src="assets/logo-musicala.png" alt="Musicala" />
+      <p>Material educativo de piano · Musicala</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
